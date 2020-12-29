@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
@@ -8,10 +8,11 @@
 <h3>hello from HTML "hello" first controller</h3>
 
 <a href="/spring-mvc-app1/goodbye"> Say goodbye </a> or
+<a href="/spring-mvc-app1/hello?name=Andrew&surname=Otchenash"> Request with parametrs </a>
+<p/>
 <a href="/spring-mvc-app1/exit"> Exit </a>
 
-<!--<a href="/goodbye"> Say goodbye </a> or-->
-<!--<a href="/exit"> Exit </a>-->
+<p th:text="${message}"/>
 
-</body>
+ </body>
 </html>
